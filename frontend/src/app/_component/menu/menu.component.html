@@ -1,0 +1,36 @@
+<div id="menu" [ngClass]="{'shown':opened}">
+    <div class="container">
+        <div class="row header">
+            <div class="col-10">
+                <img src="/assets/images/logo.png" class="w-90" alt="logo">
+            </div>
+            <div class="col-2">
+                <button (click)="close()" class="btn">
+                    <mat-icon>close</mat-icon>
+                </button>
+            </div>
+        </div>
+        <div class="row menus">
+            <div class="container">
+                <div class="row profile">
+                    <img src="{{profile.profile.image_url}}" alt="avatar">
+                    <div class="name">
+                        {{profile.first_name | titlecase}} {{profile.last_name | titlecase}}
+                    </div>
+                </div>
+                <hr>
+                <div class="row" *ngFor="let icon of icons; let i = index">
+                    <div class="menu">
+                        <svg>
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                attr.xlink:href="assets/images/svg/floating-icons.svg#{{icon}}">
+                            </use>
+                        </svg>
+                        <span>{{ names[i] }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="opened" class="backdrop" (click)="close()"></div>

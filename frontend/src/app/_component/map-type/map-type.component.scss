@@ -1,0 +1,23 @@
+@import "../../_styling/variables";
+
+#map-type {
+    position: absolute;
+    right: 5px;
+    top: calc(#{$nav_height} + 5px);
+    height: 60px;
+    width: 60px;
+    border-radius: 14px;
+    border: 2px solid $light_color;
+    cursor: pointer;
+
+    label {
+        cursor: pointer;
+        position: absolute;
+        bottom: -6px;
+        left: 4px;
+        font-weight: bold;
+        font-size: 80%;
+        color: $light_color;
+        text-shadow: 1px 1px #555;
+    }
+}

@@ -1,0 +1,17 @@
+<div class="poi-container row">
+    <div class="w-35 poi-images">
+        <img width="72" src="{{ getImage(item) }}">
+    </div>
+    <div class="w-65 poi-items" (click)="getMapDirections(item.geometry, item.name, item.icon)">
+        <div class="name">
+            {{item.name}}
+        </div>
+        <div class="rating">
+            <div class="ratings" [ngClass]="'rate' + (item.rating | number: '1.2-2' | slice: 0:1)">
+            </div>
+        </div>
+        <div class="address">
+            {{item.formatted_address}}
+        </div>
+    </div>
+</div>

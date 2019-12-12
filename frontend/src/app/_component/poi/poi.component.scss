@@ -1,0 +1,63 @@
+@import "../../_styling/variables";
+
+.poi-container {
+    background: $light_color;
+    border-bottom: 1px solid darken($color: $light_color, $amount: 15%);
+    margin: 5px 0px;
+    padding: 5px;
+
+    &:hover {
+        cursor: pointer;
+        background: darken($light_color, 10);
+    }
+
+    .name {
+        font-weight: bold;
+        font-size: 85%;
+    }
+
+    .rating {
+        margin: 3px -2px;
+        
+        .ratings {
+            height: 12px;
+            background: url('/assets/images/stars_v3.png') no-repeat;
+            background-size: 110px 110px;
+
+            &.rate5 {
+                background-position: -17px -15px;
+            }
+
+            &.rate4 {
+                background-position: -17px -29px;
+            }
+
+            &.rate3 {
+                background-position: -17px -42px;
+            }
+
+            &.rate2 {
+                background-position: -17px -55px;
+            }
+
+            &.rate1 {
+                background-position: -17px -70px;
+            }
+
+            &.rate0 {
+                background-position: -17px -83px;
+            }
+        }
+    }
+
+    .address {
+        font-size: 70%;
+        color: lighten($color: $dark_color, $amount: 45%);
+    }
+
+    .poi-images {
+        margin:auto;
+        padding: 0px 10px;
+        min-width: 72px;
+    }
+}

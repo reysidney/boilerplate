@@ -1,0 +1,10 @@
+@import "../../_styling/variables";
+
+#gmap {
+    position: absolute;
+    left: $sidebar-width;
+    height: 100%;
+    width: calc(100% - #{$sidebar-width});
+    top: $nav_height;
+    overflow: hidden;
+}

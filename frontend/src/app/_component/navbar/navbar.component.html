@@ -1,0 +1,17 @@
+<nav>
+    <button mat-fab class="btn" *ngFor="let icon of icons" (click)="this[icon + 'Clicked']()">
+        <svg>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                attr.xlink:href="assets/images/svg/floating-icons.svg#{{icon}}">
+            </use>
+        </svg>
+    </button>
+
+    <button id="logout-btn" mat-fab class="btn" (click)="logout()">
+        <mat-icon>
+            logout
+        </mat-icon>
+    </button>
+</nav>
+
+<app-menu [opened]="menuOpened" (setOpen)="menuOpened=false"></app-menu>

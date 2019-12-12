@@ -1,0 +1,117 @@
+/* MAP|Satellite buttons design*/
+@media only screen and (min-width:769px){
+    .gm-style-mtc {
+        & > div:nth-child(1) {
+            padding: 10px !important;
+            height: 30px !important;
+            font-size: 12px !important;
+        }
+
+        & > div:nth-child(2) {
+            div {
+                padding: 0px 3px !important;
+
+                label {
+                    margin-left: 3px !important;
+                    margin-top: 10px !important;
+                    font-size: 12px !important;
+                }
+
+                span {
+                    vertical-align: top !important;
+                }
+            }
+        }
+    }
+
+    /* Fix +/- zoom buttons design */
+    button.gm-control-active {
+        width: 35px !important;
+        margin: auto !important;
+
+        img {
+            height: 12px !important;
+            width: 12px !important;
+        }
+    }
+
+
+    /* yellow person button design*/
+    .gm-svpc {
+
+        img:nth-child(1),
+        img:nth-child(2) {
+            width: 13px !important;
+            height: 22px !important;
+        }
+    }
+}
+
+// direction steps 
+
+.adp {
+    padding: 10px;
+
+    .adp-warnbox {
+        display: none !important;
+    }
+    
+    .adp-placemark {
+        display: none !important;
+    }
+
+    .adp-summary {
+        font-weight: bold;
+        padding: 10px;
+        font-size: 80%;
+    }
+
+    .adp-substep {
+        font-size: 75%;
+        padding: 5px;
+    }
+
+    .adp-legal {
+        font-size: 60%;
+    }
+}
+
+// info window
+
+$info-window-bg: #f5f6fa !important;
+$info-window-fc: #2f3640 !important;
+
+.gm-style-iw, .gm-iw {
+    background: $info-window-bg;
+    max-width: 200px !important;
+    max-height: 500px !important;
+    color: $info-window-fc;
+}
+
+.gm-style-iw-c::after, .gm-style-iw-t::after {
+    background: $info-window-bg;
+}
+
+.gm-style-iw-c {
+    button {
+        img {
+            display: none;
+        }
+    }
+}
+
+.gm-style-iw-d {
+    padding-right: 16px !important;
+    padding-bottom: 10px !important;
+    overflow: auto !important;
+}
+
+// marker class
+
+.marker-label-class {
+    color: #fff;
+    background: rgba(#284D46, 0.5);
+    font-weight: bold;
+    padding: 3px;
+    border-radius: 5px;
+}

@@ -1,0 +1,88 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "app/_styling/variables";
+@import "app/_styling/gmap";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.background-color {
+    background-color: $color2;
+}
+
+.btn, .form-control {
+    box-shadow: none !important;
+}
+
+mat-dialog-container {
+    padding: 0px !important;
+    overflow-x: hidden !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.mat-dialog-backdrop {
+    background-color: rgba($color: #000, $alpha: 0.6)
+}
+
+/* Custom Scrollbar */
+
+::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* END of Scrollbar */
+
+button.swal2-close:focus {
+    outline: 0 !important;
+}
+
+.font-small {
+    font-size: 80%;
+}
+
+@mixin w-x {
+    @for $i from 1 through 100 {
+        .w-#{$i} {
+            width: $i * 1% !important;
+        }
+    }
+}
+
+@include w-x;
+
+.backdrop {
+    position: absolute;
+    z-index: 98;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(#000, 0.7);
+}

@@ -1,0 +1,86 @@
+/* Made with love by Mutiullah Samim*/
+@import "../_styling/variables";
+
+.container-fluid{
+    height: 100vh;
+    align-content: center;
+    background-image: url('/assets/images/BG.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.card{
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: $color1;
+
+    .card-header {
+        padding: 0.2em;
+        border-bottom: $color1;
+
+        img {
+            width: 300px;
+            padding: 10px;
+        }
+    }
+
+    .card-body {
+        padding-top: 0.5rem;
+
+        .container-fluid {
+            padding:15px;
+            height:100%;
+            background: $light_color;
+            border-radius: 0.25rem;
+            padding-bottom: 30px;
+            min-height: 270px;
+
+            div.text-center {
+                color: $color1;
+            }
+        }
+    }
+}
+
+.alert {
+    &.alert-danger {
+        padding: 5px;
+        font-size: 80%;
+        transition: 0.8s;
+    }
+}
+
+.input-group-prepend span{
+    width: 40px;
+    background-color: $color1;
+    color: $light_color;
+    border:0 !important;
+}
+
+input:focus{
+    outline: 0 0 0 0  !important;
+    box-shadow: 0 0 0 0 !important;
+
+}
+
+.login_btn{
+    color: $light_color;
+    background-color: $color1;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.login_btn:hover{
+    color: $light_color;
+    background-color:$color1;
+}
+
+.links{
+    color: $light_color;   
+}
+
+.links a{
+    margin-left: 4px;
+}
